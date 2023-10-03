@@ -3,98 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pontos turisticos</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Pontos Turísticos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         header {
+            text-align: center;
+            background-color: #eadb53; /* Fundo branco */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 3.5px solid #007E16; /* Borda verde escuro */
+        }
+
+        .center img {
+            width: 148px;
+            height: 145px;
+            border-radius: 50%;
+            border: 3.5px solid #0D63BF; 
+       
+        }
+
+        .business-card h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .business-card h2 {
+            font-size: 16px;
+            color: #555; /* Texto cinza suave */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
-                   </li>
-                   <li>
-                    <a href="project.html">Sobre mim</a>
-                   </li>
-                 
+                    <a class="nav-button" href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a class="nav-button" href="#sobre-mim">Sobre mim</a>
+                </li>
             </ul>
         </nav>
         <header>
             <div class="center">
-                <img src="./img/matheus.jpg"></img> 
+                <img src="./img/yusuke.jpg" alt="Imagem de Matheus Reis">
             </div>
-            <h1>by Matheus Reis</h1>
-            <h2>Lugares para conhecer</h2>
-        </header>
-    
+            <div class="business-card">
+                <h1>Matheus Reis</h1>
+                <h2>Futuro Desenvolvedor Back-End</h2>
+                <h2>Data: 03/10/2023</h2>
+                <h2>Bem-Vindo a minha pagina</h2>
+            </div>
+        </header class="introduction-header">
         <main>
             <section>
-                <h3>Top 7 Destinos do Brasil</h3>
+            <header>
+                <h1 style="font-size: 24px;">Melhores Lugares do Brasil</h1>
+                    <header>   
                 <p>
-                    "Nosso país é repleto de destinos,embora o Brasil seja conhecido como um lugar diversificado geograficamente,vamos descobrir alguns destinos interessantes "
-                </p>
+                    "Seja bem vindo a uma emocionante viagem,conheça os melhores destinos do Brasil.  As terras tupinikins são terras incrivelmente diversificadas geograficamente, abrigando uma riqueza de destinos fascinantes em diversos Estados. <p>Com uma vastas paisagens que variam de florestas tropicais a praias deslumbrantes, montanhas majestosas e cidades vibrantes, o Brasil é verdadeiramente uma nação de contrastes e beleza inigualável.
+                     Vamos explorar alguns dos destinos mais cativantes, cada um oferecendo uma experiência única e enriquecedora."</p>
+                    </p>
             </section>
             <section>
                 <h3>Pernambuco</h3>
-                <p>
-                    Estado localizado na região nordeste do pais,conta com diversas paisagens dentre: praias,cidades,interior. Embora haja problemas com a segurança,infraestrutura,transito. O centro do Recife possui comercio diversificado e varios pontos turisticos. Lugares populares: mirabilandia,shoppings,classic hall,centro de convençõe.
-                </p>
+                <button class="estado-info" data-estado="Pernambuco">!?</button>
+                <div class="pop-up centered">
+                    <p>Pernambuco é um estado localizado na região nordeste do Brasil, conhecido por sua rica cultura, belas praias e patrimônio histórico. Com uma história que remonta à época colonial, Pernambuco é famoso por ser o berço do Frevo, um dos ritmos musicais mais contagiantes do país, e também por seu Carnaval animado.</p>
+                    <p>As praias de Pernambuco são verdadeiros paraísos tropicais. Porto de Galinhas, uma das mais famosas, é conhecida por suas piscinas naturais de águas cristalinas. Recife, a capital do estado, possui uma cena cultural vibrante, com museus, teatros e uma rica gastronomia regional.</p>
+                    <p>Pernambuco também abriga a histórica cidade de Olinda, considerada Patrimônio Mundial pela UNESCO, com seu centro histórico colonial bem preservado e suas famosas ladeiras. O estado é repleto de festas populares, como o São João, com suas tradicionais quadrilhas e comidas típicas.</p>
+                    <p>Além disso, não podemos esquecer das belas praias do litoral sul, como Carneiros e Tamandaré, ideais para relaxar e aproveitar a natureza exuberante. Com tantas atrações e uma hospitalidade calorosa, Pernambuco é um destino imperdível para quem deseja conhecer a riqueza cultural e natural do Brasil.</p>            
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>Alagoas</h3>
-                <p>
-                   Um bom estado tambem da região nordeste que esta se tornando tendencia no turismo. Em Maceio capital de Alagoas,podemos encontrar um comercio em ascensão com forte alta nas redes de hotelaria e serviços turisticos. Com boas prais e a cidade recebendo melhorias na infraestrutura,pode ser um destino interessante para conhecer,alem de ser um estado pequeno vale apena conhecer seus destinos.
-                </p>
+                <button class="estado-info">!?</button>
+                <div class="pop-up">
+                    <p>
+                        Alagoas, um estado situado na região nordeste do Brasil, é um destino em ascensão no turismo. Sua capital, Maceió, oferece um cenário crescente de comércio, com um forte aumento na rede hoteleira e serviços turísticos. Com praias deslumbrantes e melhorias contínuas na infraestrutura, Alagoas é uma escolha interessante para quem procura beleza natural e cultura. 
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>Santa Catarina</h3>
-                <p>
-                    No sul do país podemos conhecer um dos melhores estados da região sul e do Brasil. A capital de floripa tem destinos interessantes para conhecer,e caso você queira diversão pode conhecer o Beto Carreiro um dos maiores parques de diversão da America latina,perto dali a cidades muito interessantes como: Balneario,Itapema,Penha. Tambem a outros destinos como Blumenau onde acontece a maior festa Alemã do país.
-                </p>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        Localizado na região sul do país, Santa Catarina é um dos melhores estados do Brasil para os amantes do turismo. Sua capital, Florianópolis, oferece destinos atraentes, e a região também é lar do Beto Carrero World, um dos maiores parques de diversões da América Latina. Além disso, cidades próximas, como Balneário Camboriú e Penha, apresentam experiências únicas. Outros lugares imperdíveis incluem Blumenau, famosa por sediar a maior festa alemã do país.    
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>São Paulo</h3>
-                <p>
-                   Conhecido como o mais populoso estado,com diversos lugares para conhecer,embora deva ser necessario estar atento ao transito e a segurança,mas é sem sombra de duvidas um lugar pra crescer economicamente.
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        São Paulo, o estado mais populoso do Brasil, é um destino repleto de atrações. Embora seja necessário atenção ao trânsito e à segurança, este é um local para crescimento econômico e exploração cultural. A cidade de São Paulo oferece uma gama diversificada de atividades, desde restaurantes de classe mundial até museus e teatros.   
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>Bahia</h3>
-                <p>
-                   O nordeste é repleto de riquezas,alem de carregar a historia do nosso país. Na Bahia você pode encontrar excelentes praias e lugares onde você pode aproveitar bem a viagem,lembrando de esta atento a segurança apesar de alguns dizerem que seguro atenção sempre é util.
-                </p>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        A Bahia, no nordeste do Brasil, é um estado rico em história e praias deslumbrantes. Com uma herança cultural única, você pode desfrutar de belas praias e locais que proporcionam experiências incríveis. Lembre-se sempre de ficar atento à segurança, mas aproveite ao máximo o que a Bahia tem a oferecer.    
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>Minas Gerais</h3>
-                <p>
-                   Direto do centro-oeste temos um otimo estado para se conhecer,mesmo não possuindo praias tem otimas paisagens e uma comida agradavel. Se oque você deseja è conhecer Belo Horizonte,pode encontrar uma cidade prospera,historica e aconchegante;as ladeiras de minas contam um pouco da historia do nosso Brasil.
-                </p>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        Minas Gerais, situado no centro-oeste do Brasil, é um estado com paisagens deslumbrantes e culinária rica. Belo Horizonte, a capital, é uma cidade próspera, histórica e acolhedora. As colinas de Minas contam um pouco da história do Brasil e oferecem oportunidades para explorar sua cultura e gastronomia.   
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
                 <h3>Amazonas</h3>
-                <p>
-                  Oque podemos encontrar no Norte? O maior estado das terras tupiniquins,tem uma cidade exuberante chamada Manaus,o norte pode não apresentar praias,porem apresenta uma infinidade belezas como rios,lagos,florestas e diversos lugares. Manaus tambem é uma cidade portuaria,tambem pode se observar o encontro do rio com o mar,e entre alguns pontos turisticos pode se observar o museu do indio,teatro amazonas e o mercado municipal. 
-                </p>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        O maior estado do Brasil, localizado na região norte, é o Amazonas. Sua capital, Manaus, é uma cidade exuberante que oferece uma visão única da natureza e cultura da região. Embora o estado não tenha praias, possui uma infinidade de belezas naturais, como rios, lagos e florestas tropicais. Você também pode visitar pontos turísticos como o Museu do Índio, o Teatro Amazonas e o Mercado Municipal.   
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
             <section>
-                <h3>Brasilia</h3>
-                <p>
-                   Tambem conhecido como a capital do país,uma cidade projetada pelo brilhante arquiteto Oscar Niemeyer,um lugar cintilante e com arquitetura moderna. locais que você pode encontrar:praça dos três poderes,congresso,planalto,STF,museu nacional.
-                </p>
+                <h3>Brasília</h3>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        Brasília, conhecida como a capital do Brasil, é uma cidade projetada pelo famoso arquiteto Oscar Niemeyer. Ela brilha com sua arquitetura moderna e abriga locais emblemáticos, como a Praça dos Três Poderes, o Congresso Nacional, o Palácio do Planalto, o Supremo Tribunal Federal e o Museu Nacional.    
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
+            </section>
+            <section>
+                <h3>Rio de Janeiro</h3>
+                <button class="info-button">!?</button>
+                <div class="pop-up">
+                    <p>
+                        O estado do Rio de Janeiro é conhecido por sua cidade homônima, famosa por suas praias icônicas, incluindo Copacabana e Ipanema, bem como pelo imponente Cristo Redentor, que se ergue sobre a cidade no alto do Morro do Corcovado. Além das atrações na cidade do Rio, o estado oferece beleza natural deslumbrante, com florestas tropicais exuberantes e montanhas imponentes, como o Pão de Açúcar. A cultura carioca é rica em música, dança e carnaval, tornando o Rio de Janeiro um destino vibrante e cheio de vida.     
+                    </p>
+                    <button class="fechar-pop-up">Fechar</button>
+                </div>
             </section>
         </main>
-        <div class="container">
-            <nav>
-        <footer>
-            <a href="https://github.com/matheus382" target="_blank" rel="noopener noreferrer">
-                <img src="./img/icons8-github.svg"></img>
-                <p>Github</p>
-            </a>
-            <a href="https://www.linkedin.com/in/matheus-reis-241915248/" target="_blank" rel="noopener noreferrer">
-                <img src="./img/icons8-linkedin.svg"></img>
-                <p>LinkedIn</p>
-            </a>
-        </footer>
+        <button id="scrollToTopButton" onclick="scrollToTop()">Voltar ao Topo</button>
     </div>
-</nav>
+
+    <div class="container">
+        <nav>
+            <footer>
+                <!-- Links para GitHub e LinkedIn -->
+                <a href="https://github.com/matheus382" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/icons8-github.svg" alt="GitHub">
+                    <p>Github</p>
+                </a>
+                <span class="icon-spacing"></span>
+                <a href="https://www.linkedin.com/in/matheus-reis-241915248/" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/icons8-linkedin.svg" alt="LinkedIn">
+                    <p>LinkedIn</p>
+                </a>
+            </footer>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript para alternar entre "Ler Mais" e "Ler Menos" nos destinos
+        const lerMaisBotoes = document.querySelectorAll(".ler-mais");
+
+        lerMaisBotoes.forEach((botao) => {
+            botao.addEventListener("click", () => {
+                const destino = botao.parentElement.querySelector(".pop-up");
+                if (destino.style.display === "none" || destino.style.display === "") {
+                    destino.style.display = "block";
+                    botao.textContent = "Ler Menos";
+                } else {
+                    destino.style.display = "none";
+                    botao.textContent = "Ler Mais";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
