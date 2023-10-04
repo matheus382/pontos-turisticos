@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #006effb5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Estilizando os botões "Início" e "Sobre Mim" */
+.nav-button {
+    background-color: #FFF; /* Cor de fundo branca */
+    color: #0D63BF; /* Cor do texto azul suave */
+    border: 2px solid #0D63BF; /* Borda azul suave */
+    border-radius: 20px; /* Cantos arredondados */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Removendo sublinhado de link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.nav-button:hover {
+    background-color: #0D63BF; /* Cor de fundo azul suave ao passar o mouse */
+    color: #FFF; /* Cor do texto branca ao passar o mouse */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0D63BF;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #005CBF;
+}
+
+header {
+    text-align: top;
+    background-color: #FFCC29;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border-radius: 50%; /* Deixa a imagem do perfil redonda */
+    width: 120px;
+    height: 120px;
+}
+
+header h1 {
+    font-size: 33px;
+    color: #0D63BF;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #007E16;
+}
+
+main {
+    padding: 20px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #007E16;
+}
+
+.introduction-header {
+    text-align: center;
+    background-color: #FFF; /* Fundo branco */
+    padding: 20px;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introduction-header p {
+    font-size: 24px;
+    color: #007E16; /* Verde suave */
+}
+
+.introduction-header p {
+    font-size: 16px;
+    color: #ffffffb4; /* Texto preto suave */
+    margin: 20px 0; /* Espaço superior e inferior para o parágrafo */
+}
+
+h2 {
+    font-size: 32px;
+    color: #ffffffb4;
+}
+
+.introduction-header p {
+    text-align: center;
+    background-color: #FFF; /* Fundo branco */
+    padding: 20px;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introduction-header p {
+    font-size: 24px;
+    color: #007E16; /* Verde suave */
+}
+
+section p {
+    font-size: 18px; /* Reduzi o tamanho da fonte um pouco para facilitar a leitura */
+    color: #333; /* Texto preto suave para melhor contraste */
+    line-height: 1.6; /* Espaçamento entre linhas para uma melhor legibilidade */
+    margin-bottom: 20px; /* Adiciona um espaço entre os parágrafos */
+}
+
+
+/* Estilo para o botão de informações */
+.info-button {
+    background-color: #FFCC29; /* Amarelo suave */
+    color: #333; /* Texto preto suave */
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Tornando-o redondo */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adicione margem à esquerda para separação */
+}
+
+.info-button:hover {
+    background-color: #FFB800; /* Amarelo um pouco mais escuro ao passar o mouse */
+}
+
+/* Pop-up */
+.pop-up {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%; /* Posição vertical centralizada (antes estava em 50%) */
+    left: 50%;
+    transform: translate(-50%, 0); /* Agora estamos apenas centralizando na horizontal */
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+/* Estilo para o botão de fechar o pop-up */
+.fechar-pop-up {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #FFCC29; /* Amarelo suave */
+    color: #333; /* Texto preto suave */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.fechar-pop-up:hover {
+    background-color: #FFB800; /* Amarelo um pouco mais escuro ao passar o mouse */
+}
+
+.lugares-para-conhecer {
+    border: 4px solid white; /* Borda azul suave */
+    padding: 10px; /* Espaçamento interno */
+    display: inline-block; /* Para que a borda envolva o texto */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo para o nome "Pernambuco" */
+.nome-estado {
+    font-size: 20px;
+    color: #FFCC29; /* Amarelo suave */
+    border: 2px solid #005CBF; /* Borda azul suave */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#scrollToTopButton {
+    background-color: #0D63BF; /* Azul suave */
+    color: #FFF; /* Texto branco */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopButton:hover {
+    background-color: #005CBF; /* Azul um pouco mais escuro */
+}
+
